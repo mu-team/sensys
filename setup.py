@@ -12,7 +12,7 @@ with open(README_FILE) as f:
 
 about = {
     'name': 'sensys',
-    'version': '0.1.0',
+    'version': '0.2.0',
     'author': 'Kirill (kxnes) Kolesnikov',
     'author_email': 'kkxnes@gmail.com',
     'license': 'The MIT License',
@@ -27,7 +27,9 @@ description = {
 
 packages = [
     'sensys.plugin',
-    'sensys.contrib.django'
+    'sensys.contrib',
+    'sensys.contrib.django',
+    'sensys.contrib.flask',
 ]
 
 requires = [

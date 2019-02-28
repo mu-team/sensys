@@ -12,7 +12,7 @@ with open(README_FILE) as f:
 
 about = {
     'name': 'sensys',
-    'version': '0.2.0',
+    'version': '0.2.1',
     'author': 'Kirill (kxnes) Kolesnikov',
     'author_email': 'kkxnes@gmail.com',
     'license': 'The MIT License',
@@ -43,6 +43,9 @@ setuptools.setup(
     install_requires=requires,
     entry_points={
         'console_scripts': ['sensys=sensys.plugin:main']
+    },
+    extras_require={
+        'flask': 'raven[flask]>=6.9.0'
     },
     classifiers=[
         'Programming Language :: Python :: 3.4',
